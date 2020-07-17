@@ -1,8 +1,13 @@
 import React from "react"
+import styled from "styled-components"
 import GlobalStyle from "../utilities/GlobalStyle"
-import Container from "../styled_components/container"
 import Header from "./Header"
 import Overview from "./Overview"
+
+const Container = styled.div`
+  margin: auto;
+  max-width: 1200px;
+`
 
 const App = () => {
   return (

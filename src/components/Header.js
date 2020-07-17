@@ -10,6 +10,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   color: ${props => props.theme.textPrimary};
+  margin-bottom: 0.3rem;
 `
 
 const Followers = styled.h4`
