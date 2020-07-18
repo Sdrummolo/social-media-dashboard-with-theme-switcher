@@ -15,9 +15,9 @@ const Button = styled.button`
   width: 20px;
   border-radius: 50%;
   border: none;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.topBackground};
   position: relative;
-  left: ${({ activeTheme }) => (activeTheme === "light" ? "3px" : "27px")};
+  left: ${({ activeTheme }) => (activeTheme === "light" ? "27px" : "3px")};
   top: 2.5px;
   cursor: pointer;
   outline: none;

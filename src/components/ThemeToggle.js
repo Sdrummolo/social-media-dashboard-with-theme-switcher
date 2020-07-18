@@ -9,16 +9,19 @@ const Container = styled.div`
 `
 
 const Mode = styled.h4`
-  color: ${({ theme }) => theme.colorPrimary};
+  color: ${({ theme, activeTheme }) =>
+    activeTheme === "light" ? theme.textSecondary : theme.textPrimary};
   margin-right: 0.8rem;
 `
 
 const ThemeToggle = () => {
-  const { activeTheme, changeTheme } = useContext(ThemeContext)
+  const { activeTheme } = useContext(ThemeContext)
 
   return (
     <Container>
-      <Mode>{`${activeTheme[0].toUpperCase()}${activeTheme.slice(1)}`} Mode</Mode>
+      <Mode activeTheme={activeTheme}>
+        {`${activeTheme[0].toUpperCase()}${activeTheme.slice(1)}`} Mode
+      </Mode>
       <Toggle />
     </Container>
   )

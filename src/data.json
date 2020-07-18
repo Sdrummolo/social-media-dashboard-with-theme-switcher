@@ -1,0 +1,35 @@
+{
+  "data": {
+    "followers": 23004,
+    "total": [
+      {
+        "social": "facebook",
+        "account": "@nathanf",
+        "border": "hsl(208, 92%, 53%)",
+        "followers": 1987,
+        "followersGainedToday": 12
+      },
+      {
+        "social": "twitter",
+        "account": "@nathanf",
+        "border": "hsl(203, 89%, 53%)",
+        "followers": 1044,
+        "followersGainedToday": 99
+      },
+      {
+        "social": "instagram",
+        "account": "@realnathanf",
+        "border": "linear-gradient(90deg, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 100%);",
+        "followers": 11000,
+        "followersGainedToday": 1099
+      },
+      {
+        "social": "youtube",
+        "account": "Nathan F.",
+        "border": "hsl(348, 97%, 39%)",
+        "followers": 8239,
+        "followersGainedToday": -144
+      }
+    ]
+  }
+}

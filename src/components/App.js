@@ -6,7 +6,8 @@ import Overview from "./Overview"
 
 const Container = styled.div`
   margin: auto;
-  max-width: 1200px;
+  padding: 0 1rem;
+  max-width: 1208px;
 `
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <GlobalStyle />
       <Container>
         <Header />
+
         <Overview />
       </Container>
     </>
