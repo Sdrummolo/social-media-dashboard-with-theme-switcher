@@ -7,6 +7,7 @@ const ToggleContainer = styled.div`
   height: 26px;
   background: ${({ theme }) => theme.toggle};
   border-radius: 12.5px;
+  cursor: pointer;
   transition: all 0.2s;
 `
 
@@ -19,8 +20,8 @@ const Button = styled.button`
   position: relative;
   left: ${({ activeTheme }) => (activeTheme === "light" ? "27px" : "3px")};
   top: 2.5px;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
   transition: all 0.2s;
 `
 
@@ -28,8 +29,8 @@ const Toggle = () => {
   const { activeTheme, changeTheme } = useContext(ThemeContext)
 
   return (
-    <ToggleContainer activeTheme={activeTheme}>
-      <Button activeTheme={activeTheme} onClick={changeTheme} />
+    <ToggleContainer activeTheme={activeTheme} onClick={changeTheme}>
+      <Button activeTheme={activeTheme} />
     </ToggleContainer>
   )
 }

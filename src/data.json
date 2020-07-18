@@ -30,6 +30,56 @@
         "followers": 8239,
         "followersGainedToday": -144
       }
+    ],
+    "today": [
+      {
+        "social": "facebook",
+        "stat": "Page Views",
+        "amount": 87,
+        "growth": 3
+      },
+      {
+        "social": "facebook",
+        "stat": "Likes",
+        "amount": 52,
+        "growth": -2
+      },
+      {
+        "social": "instagram",
+        "stat": "Likes",
+        "amount": 5462,
+        "growth": 2257
+      },
+      {
+        "social": "instagram",
+        "stat": "Profile Views",
+        "amount": 52000,
+        "growth": 1375
+      },
+      {
+        "social": "twitter",
+        "stat": "Retweets",
+        "amount": 117,
+        "growth": 303
+      },
+      {
+        "social": "twitter",
+        "stat": "Likes",
+        "amount": 507,
+        "growth": 553
+      },
+      {
+        "social": "youtube",
+        "stat": "Likes",
+        "amount": 107,
+        "growth": -19
+      },
+      {
+        "social": "youtube",
+        "stat": "Total Views",
+        "amount": 1407,
+        "growth": -12
+      }
     ]
   }
 }

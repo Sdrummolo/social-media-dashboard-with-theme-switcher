@@ -6,6 +6,10 @@ import Toggle from "./Toggle"
 const Container = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 1216px) {
+    justify-content: space-between;
+  }
 `
 
 const Mode = styled.h4`

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "styled-components"
 import facebook from "../images/icon-facebook.svg"
 import twitter from "../images/icon-twitter.svg"
@@ -6,6 +6,7 @@ import instagram from "../images/icon-instagram.svg"
 import youtube from "../images/icon-youtube.svg"
 import up from "../images/icon-up.svg"
 import down from "../images/icon-down.svg"
+import ThemeContext from "../utilities/ThemeContext"
 
 const Container = styled.div`
   min-width: 270px;
@@ -18,6 +19,11 @@ const Container = styled.div`
 
   &:hover {
     background-color: ${({ theme }) => theme.cardHover};
+  }
+
+  @media (max-width: 620px) {
+    min-width: 327px;
+    max-width: 327px;
   }
 `
 
@@ -80,6 +86,7 @@ const GainedToday = styled.p`
 `
 
 const CardLarge = ({ data }) => {
+  const { kFormatter } = useContext(ThemeContext)
   const { social, followers, followersGainedToday, border, account } = data
   let icon
 
@@ -96,8 +103,8 @@ const CardLarge = ({ data }) => {
         <h5>{account}</h5>
       </Social>
       <Followers>
-        <h1>{followers}</h1>
-        <h4>Followers</h4>
+        <h1>{kFormatter(followers)}</h1>
+        <h4>{social === "youtube" ? "Subscribers" : "Followers"}</h4>
         <div>
           <img
             src={followersGainedToday >= 0 ? up : down}
