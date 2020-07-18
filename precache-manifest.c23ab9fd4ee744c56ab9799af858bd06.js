@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0d101c1634955b949bcc07457513b9e",
+    "revision": "b95c0edec4f4acfcad799f083fb95754",
     "url": "/social-media-dashboard-with-theme-switcher/index.html"
   },
   {
